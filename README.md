@@ -1,337 +1,566 @@
 # 🛍️ Customer Shopping Behavior Analysis
 
 <p align="center">
-  <b>End-to-End Data Analytics Project using Python, SQL & Power BI</b>
+  <strong>End-to-End Data Analytics Project using Python, SQL & Power BI</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/SQL-Data%20Analysis-orange?logo=mysql" alt="SQL">
-  <img src="https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-yellow?logo=powerbi" alt="Power BI">
-  
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/SQL-Business%20Analysis-4479A1?logo=mysql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black" alt="Power BI">
+
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-**Customer Shopping Behavior Analysis** is an end-to-end Data Analytics project developed to understand customer purchasing patterns, spending behavior, product preferences, demographics, and shopping trends.
+**Customer Shopping Behavior Analysis** is an end-to-end Data Analytics project focused on understanding customer purchasing behavior, product performance, customer engagement, and factors influencing purchase decisions.
 
-The project combines **Python, SQL, and Power BI** to transform customer shopping data into meaningful business insights.
+The project follows a complete analytics workflow:
 
-Python was used for data cleaning, preprocessing, and exploratory data analysis. SQL was used to perform business-focused analysis and extract key insights. Power BI was used to develop an interactive dashboard for KPI tracking, data visualization, and business reporting.
+**Data Preparation → Exploratory Analysis → SQL Analysis → Power BI Visualization → Business Insights → Recommendations**
 
-The project demonstrates a complete analytics workflow from raw data preparation to business insights and data-driven recommendations.
+Python was used for data preparation and exploratory analysis, SQL was used to perform structured business analysis, and Power BI was used to develop an interactive dashboard for communicating key findings to stakeholders.
+
+The project demonstrates practical Data Analyst skills in transforming raw customer data into meaningful and actionable business insights.
 
 ---
 
-## 🎯 Business Objectives
+## 🎯 Business Problem
 
-The main objectives of this project are:
+A leading retail company wants to better understand its customers' shopping behavior to improve **sales, customer satisfaction, engagement, and long-term loyalty**.
 
-- Analyze customer purchasing behavior and spending patterns.
+Management wants to identify purchasing patterns across:
+
+- Customer demographics
+- Product categories
+- Purchase amounts
+- Subscription status
+- Discount usage
+- Customer ratings
+- Payment preferences
+- Shipping preferences
+- Age groups
+
+### Key Business Question
+
+> **How can the company leverage customer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?**
+
+---
+
+## 🎯 Project Objectives
+
+The project aims to:
+
+- Understand customer purchasing patterns.
+- Analyze customer demographics and behavior.
 - Identify high-performing product categories.
-- Understand customer demographics and preferences.
-- Analyze customer purchase frequency.
-- Evaluate the impact of discounts on purchasing behavior.
-- Compare subscribed and non-subscribed customers.
-- Analyze customer ratings and payment preferences.
-- Identify potential high-value customer segments.
-- Build an interactive Power BI dashboard.
-- Generate actionable business insights.
-- Support data-driven business decision-making.
+- Analyze purchase amounts across customer segments.
+- Evaluate customer subscription behavior.
+- Understand the impact of discounts on purchases.
+- Analyze customer ratings by category.
+- Identify important customer and product trends.
+- Develop an interactive business dashboard.
+- Provide actionable recommendations for decision-makers.
+
+---
+
+## 🗂️ Project Deliverables
+
+| Deliverable | File / Folder | Purpose |
+|---|---|---|
+| 📁 Business Requirements | `Business Requirements/` | Project requirements and business objectives |
+| 📄 Business Insights Report | `Business Insights.pdf` | Key findings, insights and recommendations |
+| 📊 Power BI Dashboard | `Customer Behavior Analysis_Dashboard.pbix` | Interactive business intelligence dashboard |
+| 🐍 Python Analysis | `Customer Behavior Python Analysis.ipynb` | Data preparation and exploratory analysis |
+| 🗄️ SQL Analysis | `Customer Behavior SQL Analysis.sql` | Business-focused SQL queries |
+| 🖼️ Dashboard Preview | `Dashboard.png` | Power BI dashboard screenshot |
+| 📖 Documentation | `README.md` | Project documentation |
 
 ---
 
 ## 🔄 Project Workflow
 
 ```text
-                    Customer Shopping Dataset
-                              │
-                              ▼
-                    Data Cleaning & Preparation
-                              │
-                              ▼
-                    Exploratory Data Analysis
-                              │
-                              ▼
-                    Python-Based Analysis
-                              │
-                              ▼
-                     SQL Business Analysis
-                              │
-                              ▼
-                      KPI & Insight Generation
-                              │
-                              ▼
-                     Power BI Dashboard
-                              │
-                              ▼
-                 Business Insights & Recommendations
+                Raw Customer Shopping Data
+                           │
+                           ▼
+                 Data Preparation
+                           │
+                           ▼
+              Python Exploratory Analysis
+                           │
+                           ▼
+                 SQL Business Analysis
+                           │
+                           ▼
+              KPI & Business Insight Creation
+                           │
+                           ▼
+                 Power BI Dashboard
+                           │
+                           ▼
+             Business Recommendations
+                           │
+                           ▼
+                 Final Insights Report
 ```
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Python** | Data cleaning, preprocessing and exploratory analysis |
-| **Pandas** | Data manipulation and analysis |
-| **NumPy** | Numerical operations |
+| Technology | Usage |
+|---|---|
+| **Python** | Data cleaning, preparation and exploratory analysis |
+| **Pandas** | Data manipulation and transformation |
+| **NumPy** | Numerical analysis |
 | **Matplotlib** | Data visualization |
-| **SQL** | Business analysis and data querying |
-| **Power BI** | Interactive dashboard and KPI reporting |
-| **CSV** | Dataset storage |
+| **SQL** | Business analysis and analytical queries |
+| **Power BI** | Interactive dashboard and KPI visualization |
+| **Google Colab / Jupyter** | Python development environment |
 
 ---
 
-# 🧹 Data Cleaning & Preparation
+# 🐍 1. Python Data Analysis
 
-Data cleaning and preparation were performed using **Python and Pandas** before conducting further analysis.
+Python was used to prepare the dataset and perform exploratory analysis before business reporting.
 
-### Data Preparation Activities
+### Key Activities
 
-- Loaded and inspected the dataset.
-- Checked dataset structure and dimensions.
-- Reviewed column names and data types.
-- Identified missing values.
-- Checked for duplicate records.
-- Validated numerical and categorical fields.
-- Cleaned and prepared the dataset.
-- Standardized data where required.
-- Prepared the cleaned dataset for further analysis.
+- Imported and inspected the dataset.
+- Reviewed dataset structure and data types.
+- Checked data quality.
+- Performed data cleaning and preparation.
+- Analyzed customer demographics.
+- Examined purchase amounts.
+- Analyzed product categories.
+- Studied customer ratings.
+- Investigated subscription behavior.
+- Analyzed discount usage.
+- Explored purchasing patterns across age groups.
+- Created visualizations to identify trends and patterns.
 
----
-
-# 🐍 Python Data Analysis
-
-Python was used as the primary analytical layer for data preparation and exploratory data analysis.
-
-### Analysis Performed
-
-- Dataset overview and statistical summary.
-- Customer demographic analysis.
-- Purchase amount analysis.
-- Product category analysis.
-- Customer spending behavior.
-- Purchase frequency analysis.
-- Discount usage analysis.
-- Subscription analysis.
-- Customer rating analysis.
-- Payment method analysis.
-- Data visualization and trend identification.
-
-### Python Libraries
+### Libraries Used
 
 ```python
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 ```
+
+### Python Deliverable
+
+`Customer Behavior Python Analysis.ipynb`
 
 ---
 
-# 🗄️ SQL Business Analysis
+# 🗄️ 2. SQL Business Analysis
 
-SQL was used to perform structured business analysis and extract meaningful insights from the customer shopping dataset.
+SQL was used to convert the prepared customer data into business-focused analysis.
 
-### SQL Analysis Areas
+### Areas of Analysis
 
-- Total sales analysis.
-- Average purchase amount.
-- Sales by product category.
-- Customer purchase frequency.
-- Customer spending analysis.
-- Subscription behavior.
-- Discount usage.
-- Gender-based analysis.
-- Age-group analysis.
-- Payment method analysis.
-- Customer rating analysis.
-- Product category performance.
-- Customer segmentation.
-
-### Example SQL Query
-
-```sql
-SELECT
-    Category,
-    SUM(Purchase_Amount) AS Total_Sales,
-    AVG(Purchase_Amount) AS Average_Purchase
-FROM customer_shopping
-GROUP BY Category
-ORDER BY Total_Sales DESC;
-```
-
-This query identifies product categories based on total sales and average purchase amount.
-
----
-
-# 📊 Power BI Dashboard
-
-An interactive **Power BI dashboard** was developed to present the analytical findings in a clear and business-friendly format.
-
-The dashboard combines KPIs, charts, filters, and visualizations to provide a comprehensive view of customer shopping behavior.
-
-## 📌 Key Performance Indicators
-
-- **Total Customers**
-- **Total Sales**
-- **Average Purchase Amount**
-- **Average Customer Rating**
-- **Purchase Frequency**
-- **Subscription Rate**
-
-## 📈 Dashboard Analysis
-
-The dashboard provides insights into:
-
-- Customer demographics
-- Sales performance
-- Product categories
-- Customer spending
-- Purchase frequency
-- Subscription status
-- Discount usage
-- Payment methods
-- Customer ratings
+- Customer purchase behavior
+- Product category performance
+- Purchase amount analysis
 - Customer segmentation
+- Subscription analysis
+- Discount analysis
+- Customer rating analysis
+- Demographic analysis
+- Payment behavior
+- Purchase frequency
+- Business performance metrics
 
-Interactive filters allow users to explore customer behavior from different customer and product perspectives.
+The SQL analysis provides structured answers to business questions and supports the insights presented in the Power BI dashboard.
 
----
+### SQL Deliverable
 
-# 🔍 Key Insights
-
-The analysis provides a detailed understanding of customer shopping behavior.
-
-### 👥 Customer Behavior
-
-Customer purchasing patterns were analyzed based on demographics, spending behavior, purchase frequency, subscription status, and shopping preferences.
-
-### 🛒 Product Performance
-
-Product categories were analyzed to identify stronger-performing categories and understand customer demand patterns.
-
-### 💰 Customer Spending
-
-Customer purchase amounts were analyzed to identify spending patterns and potential high-value customer segments.
-
-### 🎯 Customer Segmentation
-
-Customers were analyzed based on purchasing behavior, spending, frequency, and engagement to identify meaningful customer groups.
-
-### 🏷️ Discount Behavior
-
-Discount usage was analyzed to understand customer response to promotional offers and support better discount strategies.
-
-### 🔄 Subscription Behavior
-
-Subscribed and non-subscribed customers were compared to understand differences in purchasing behavior and identify customer retention opportunities.
-
-### 💳 Payment Preferences
-
-Payment method analysis was performed to understand commonly preferred payment options among customers.
+`Customer Behavior SQL Analysis.sql`
 
 ---
 
-# 📈 Dashboard Preview
+# 📊 3. Power BI Dashboard
 
-The Power BI dashboard provides an interactive overview of customer shopping behavior, sales performance, customer segments, and key business metrics.
+The Power BI dashboard provides an interactive view of customer shopping behavior and business performance.
 
-> **Note:** If your dashboard screenshot has a different filename, replace the filename below with the exact filename uploaded to your GitHub repository.
+## Key Dashboard KPIs
 
-![Customer Shopping Behavior Dashboard](Customer%20Behavior%20Analysis%20Dashboard_Screenshot.png)
+The dashboard reports:
+
+- **3.9K Customers**
+- **$59.764 Average Purchase Amount**
+- **3.75 Average Review Rating**
+
+## Dashboard Components
+
+The dashboard includes analysis of:
+
+- Subscription Status
+- Gender
+- Product Category
+- Shipping Type
+- Purchase Amount by Category
+- Customers by Subscription Status
+- Purchase Amount by Age Group
+- Rating by Category
+- Purchase Amount by Discount Applied
+- Customers by Category
+
+### Interactive Filters
+
+Users can explore the dashboard using:
+
+- Subscription Status
+- Gender
+- Category
+- Shipping Type
+
+This enables stakeholders to analyze customer behavior from different business perspectives.
 
 ---
 
-# 📂 Repository Structure
+# 🖼️ Dashboard Preview
 
-```text
-Customer-Shopping-Behavior-Analysis/
-│
-├── Customer Behavior Analysis Dashboard_Screenshot.png
-├── Customer Behavior Analysis.pbix
-├── Customer_Shopping_Behavior_Analysis_In_Python.ipynb
-├── Customer_shopping_behavior_analysis.sql
-└── README.md
-```
+![Customer Behavior Analysis Dashboard](Dashboard.png)
 
 ---
 
-# 📚 Project Files
+# 🔍 4. Business Insights
 
-| File | Description |
-|------|-------------|
-| `Customer Behavior Analysis.pbix` | Interactive Power BI dashboard |
-| `Customer_Shopping_Behavior_Analysis_In_Python.ipynb` | Python data cleaning, EDA and analysis |
-| `Customer_shopping_behavior_analysis.sql` | SQL business analysis queries |
-| `Customer Behavior Analysis Dashboard_Screenshot.png` | Power BI dashboard screenshot |
-| `README.md` | Complete project documentation |
+## 👥 Customer & Subscription Insights
+
+The dashboard analyzes approximately **3.9K customers**, with non-subscribed customers representing the larger customer group.
+
+This indicates an opportunity to increase subscription adoption through stronger loyalty and membership benefits.
+
+### Business Implication
+
+The company can strengthen subscription programs by offering:
+
+- Exclusive discounts
+- Loyalty rewards
+- Personalized offers
+- Early access to products
+- Free or priority shipping
 
 ---
 
-# 🧠 Skills Demonstrated
+## 🛍️ Product Category Insights
+
+The dashboard analyzes four major categories:
+
+- Clothing
+- Accessories
+- Footwear
+- Outerwear
+
+**Clothing** shows the strongest performance in terms of purchase amount and customer volume in the dashboard.
+
+Accessories also contribute significantly, while Footwear and Outerwear show comparatively lower performance.
+
+### Business Implication
+
+The company should maintain strong inventory and marketing focus on high-performing categories while investigating the reasons for lower performance in other categories.
+
+---
+
+## 👤 Age Group Insights
+
+Purchase amount varies across different customer age groups.
+
+The dashboard shows that the **Young Adult** group contributes the highest purchase amount among the displayed age groups, followed by Middle-aged, Adult, and Senior customers.
+
+### Business Implication
+
+Marketing campaigns can be customized according to age-group purchasing behavior instead of applying the same strategy to all customers.
+
+---
+
+## ⭐ Customer Rating Insights
+
+The overall average review rating shown in the dashboard is approximately **3.75**.
+
+Category-level rating analysis helps identify customer satisfaction patterns across different product categories.
+
+### Business Implication
+
+Customer feedback should be monitored by category to identify opportunities for improving product quality, service experience, and customer satisfaction.
+
+---
+
+## 🏷️ Discount Insights
+
+The dashboard compares purchase amounts based on whether discounts were applied.
+
+Both discounted and non-discounted purchases contribute significantly to the overall purchase amount.
+
+### Business Implication
+
+Discounts should be used strategically rather than universally. Customers who are more responsive to promotions can be targeted with personalized offers.
+
+---
+
+## 🚚 Shipping Preference Insights
+
+The dashboard provides analysis using different shipping options:
+
+- 2-Day Shipping
+- Express
+- Free Shipping
+- Next Day Air
+- Standard
+- Store Pickup
+
+### Business Implication
+
+Understanding shipping preferences can help the business optimize delivery options, customer experience, and logistics costs.
+
+---
+
+# 📌 5. Key Business Findings
+
+| Business Area | Finding | Business Opportunity |
+|---|---|---|
+| Customers | Approximately 3.9K customers analyzed | Develop targeted customer segments |
+| Subscription | Non-subscribers represent the larger group | Increase subscription conversion |
+| Purchase Value | Average purchase is approximately $59.76 | Increase basket size through cross-selling |
+| Rating | Average rating is approximately 3.75 | Improve customer experience |
+| Category | Clothing leads category performance | Maintain inventory and marketing focus |
+| Age Group | Young Adults show the highest purchase amount | Develop targeted campaigns |
+| Discounts | Both discounted and non-discounted purchases contribute significantly | Optimize promotional strategies |
+| Shipping | Multiple shipping preferences are available | Improve delivery personalization |
+
+---
+
+# 💡 6. Business Recommendations
+
+## 1. Increase Subscription Adoption
+
+Develop stronger subscription benefits such as:
+
+- Exclusive discounts
+- Loyalty rewards
+- Personalized offers
+- Early access to products
+- Free or priority shipping
+
+---
+
+## 2. Focus on High-Performing Categories
+
+Clothing shows strong customer and purchase performance.
+
+The company should:
+
+- Maintain sufficient inventory.
+- Promote best-selling products.
+- Identify cross-selling opportunities.
+- Use high-performing products to attract new customers.
+
+---
+
+## 3. Improve Underperforming Categories
+
+Footwear and Outerwear show comparatively lower performance.
+
+Further analysis should investigate:
+
+- Product demand
+- Pricing
+- Customer preferences
+- Discounts
+- Product availability
+- Customer ratings
+
+---
+
+## 4. Implement Customer Segmentation
+
+Customers can be segmented based on:
+
+- Purchase amount
+- Purchase frequency
+- Age
+- Subscription status
+- Product preferences
+- Discount response
+
+This can enable more personalized marketing campaigns.
+
+---
+
+## 5. Optimize Discount Strategy
+
+Instead of offering discounts to every customer, identify customers who are most likely to respond to promotions.
+
+This can improve:
+
+- Marketing ROI
+- Customer conversion
+- Customer retention
+- Profitability
+
+---
+
+## 6. Improve Customer Experience
+
+Use review ratings and purchasing behavior to identify areas where customer satisfaction can be improved.
+
+Categories with lower ratings should receive additional attention.
+
+---
+
+## 7. Develop Personalized Marketing
+
+Use customer behavior to create personalized campaigns based on:
+
+- Previous purchases
+- Preferred categories
+- Spending behavior
+- Age group
+- Subscription status
+- Discount preferences
+
+---
+
+# 📈 7. Stakeholder Value
+
+The Power BI dashboard provides stakeholders with a centralized view of customer behavior and business performance.
+
+### Marketing Team
+
+Can identify customer segments and develop targeted campaigns.
+
+### Sales Team
+
+Can identify high-performing categories and purchasing patterns.
+
+### Customer Relationship Team
+
+Can analyze subscription behavior, ratings, and customer engagement.
+
+### Management
+
+Can monitor KPIs and use data-driven insights for strategic decisions.
+
+### Product Team
+
+Can evaluate category performance and customer preferences.
+
+---
+
+# 🧠 8. Skills Demonstrated
 
 ## Data Analytics
 
 - Data Cleaning
-- Data Preprocessing
+- Data Preparation
 - Exploratory Data Analysis
 - Customer Behavior Analysis
 - Sales Analysis
 - Customer Segmentation
 - Statistical Analysis
 - Business Analysis
+- KPI Analysis
 
-## Technical Skills
+## Python
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
-- SQL
-- Power BI
-- Data Visualization
+- Jupyter / Google Colab
+
+## SQL
+
+- SELECT Statements
+- Filtering
+- Aggregation
+- GROUP BY
+- ORDER BY
+- CASE Statements
+- Business Metrics
+- Analytical Queries
+
+## Power BI
+
 - Dashboard Development
-- KPI Analysis
-
-## Business Intelligence
-
-- Business Question Formulation
-- Business Requirement Analysis
-- Customer Insights
-- Trend Analysis
-- Performance Analysis
-- Strategic Recommendations
-- Data-Driven Decision Making
+- KPI Cards
+- Interactive Filters
+- Data Visualization
+- Business Reporting
+- Data Storytelling
 
 ---
 
-# 📊 Data Analytics Concepts Used
+# 📊 Data Analytics Concepts
 
 - Exploratory Data Analysis
 - Descriptive Analysis
 - Customer Segmentation
 - Sales Performance Analysis
+- Product Performance Analysis
+- Customer Behavior Analysis
 - Trend Analysis
 - KPI Development
 - Data Visualization
 - Business Intelligence
-- Customer Behavior Analysis
+- Data Storytelling
 - Data-Driven Decision Making
 
 ---
 
-# 📌 Project Outcome
+# 📁 Repository Structure
 
-This project demonstrates a complete **end-to-end Data Analytics workflow**, starting from raw customer shopping data and progressing through:
+```text
+Customer-Shopping-Behavior-Analysis/
+│
+├── Business Requirements/
+│   └── Project requirements and business documentation
+│
+├── Business Insights.pdf
+│
+├── Customer Behavior Analysis_Dashboard.pbix
+│
+├── Customer Behavior Python Analysis.ipynb
+│
+├── Customer Behavior SQL Analysis.sql
+│
+├── Dashboard.png
+│
+└── README.md
+```
 
-**Data Cleaning → Exploratory Analysis → SQL Analysis → KPI Development → Power BI Dashboard → Business Insights → Recommendations**
+---
 
-The integration of **Python, SQL, and Power BI** demonstrates practical skills in data analysis, business intelligence, data visualization, dashboard development, and business decision-making.
+# 📄 Project Documentation
 
-The final solution converts raw customer shopping data into structured insights that can help businesses better understand their customers, improve marketing strategies, optimize sales performance, and strengthen customer retention.
+### 📋 Business Requirements
+
+The `Business Requirements` folder contains the project requirements, business problem, objectives, and expected deliverables.
+
+### 📊 Business Insights Report
+
+`Business Insights.pdf` contains the key analytical findings, business insights, and recommendations derived from the project.
+
+### 📈 Power BI Dashboard
+
+`Customer Behavior Analysis_Dashboard.pbix` contains the interactive Power BI dashboard.
+
+### 🐍 Python Analysis
+
+`Customer Behavior Python Analysis.ipynb` contains the Python-based data preparation, exploratory analysis, and visualizations.
+
+### 🗄️ SQL Analysis
+
+`Customer Behavior SQL Analysis.sql` contains the SQL queries used to perform business-focused analysis.
+
+### 🖼️ Dashboard Image
+
+`Dashboard.png` provides a preview of the Power BI dashboard.
 
 ---
 
@@ -339,41 +568,66 @@ The final solution converts raw customer shopping data into structured insights 
 
 The project can be further enhanced by:
 
-- Developing advanced customer segmentation using Machine Learning.
-- Performing Customer Lifetime Value (CLV) analysis.
-- Predicting customer churn.
-- Developing purchase prediction models.
-- Building a product recommendation system.
-- Performing sales forecasting.
+- Implementing advanced customer segmentation using Machine Learning.
+- Developing Customer Lifetime Value (CLV) analysis.
+- Building customer churn prediction models.
+- Developing a product recommendation system.
+- Creating sales forecasting models.
 - Adding automated Power BI data refresh.
-- Integrating additional customer and transaction datasets.
-- Developing a real-time analytics dashboard.
+- Integrating real-time customer transaction data.
+- Developing customer propensity models.
+- Creating advanced customer retention analytics.
 
 ---
 
-## ⭐ Project Highlights
+# 🏆 Project Outcome
 
-- End-to-End Data Analytics Project
-- Python-Based Data Cleaning & EDA
-- SQL Business Analysis
-- Interactive Power BI Dashboard
-- Customer Behavior Analysis
-- Sales & Product Performance Analysis
-- Customer Segmentation
-- Business Insights & Recommendations
-- Data-Driven Decision Making
+This project demonstrates the complete lifecycle of a practical **Data Analytics and Business Intelligence solution**.
+
+### The project combines:
+
+**Python** → Data Preparation & Exploratory Analysis
+
+**SQL** → Business Analysis & Querying
+
+**Power BI** → Visualization & Dashboarding
+
+**Business Insights** → Recommendations & Decision Support
+
+The final solution transforms customer shopping data into actionable insights that can help a retail organization improve:
+
+- Customer engagement
+- Sales performance
+- Marketing effectiveness
+- Product strategy
+- Customer satisfaction
+- Customer retention
 
 ---
+
+# ⭐ Project Highlights
+
+- ✅ End-to-End Data Analytics Project
+- ✅ Python Data Preparation & EDA
+- ✅ SQL Business Analysis
+- ✅ Interactive Power BI Dashboard
+- ✅ Customer Behavior Analysis
+- ✅ Product & Sales Performance Analysis
+- ✅ Customer Segmentation
+- ✅ KPI Analysis
+- ✅ Business Insights Report
+- ✅ Business Recommendations
+- ✅ Professional GitHub Documentation
+
+---
+
 # 👩‍💻 Author
 
 ## Greeshma R Krishnan
-
-Python • SQL • Power BI • Excel • Data Visualization
-
----
-
-
+**Skills:** Python | SQL | Power BI | Excel | Data Analysis | Data Visualization
 
 ---
 
-⭐ **If you find this project useful, feel free to explore the repository.**
+<p align="center">
+  <strong>⭐ Thank you for visiting this project!</strong>
+</p>
