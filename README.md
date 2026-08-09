@@ -43,25 +43,6 @@ The main objectives of this project are:
 
 ---
 
-## ❓ Business Questions
-
-This project focuses on answering important business questions such as:
-
-1. Which product categories generate the highest sales?
-2. What is the average purchase amount?
-3. Which customer groups contribute the most to sales?
-4. How does customer age influence purchasing behavior?
-5. How does gender relate to purchasing patterns?
-6. What is the impact of discounts on customer purchases?
-7. Do subscribed customers behave differently from non-subscribed customers?
-8. Which payment methods are most preferred?
-9. What is the average customer rating?
-10. Which customers have higher purchase frequency?
-11. Which product categories show stronger customer engagement?
-12. What strategies can improve customer retention and sales performance?
-
----
-
 ## 🔄 Project Workflow
 
 ```text
@@ -146,7 +127,6 @@ Python was used as the primary analytical layer for data preparation and explora
 ```python
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 ```
 
 ---
@@ -252,40 +232,6 @@ Subscribed and non-subscribed customers were compared to understand differences 
 ### 💳 Payment Preferences
 
 Payment method analysis was performed to understand commonly preferred payment options among customers.
-
----
-
-# 💡 Business Recommendations
-
-Based on the analysis, the following strategies can be considered:
-
-### 1. Customer Segmentation
-
-Identify high-value and frequent customers and provide personalized offers, loyalty benefits, and targeted promotions.
-
-### 2. Targeted Marketing
-
-Use customer demographics and purchasing behavior to create targeted and personalized marketing campaigns.
-
-### 3. Discount Optimization
-
-Analyze discount effectiveness and provide promotions to customer segments where discounts are more likely to influence purchasing decisions.
-
-### 4. Customer Retention
-
-Strengthen subscription and loyalty programs to encourage repeat purchases and improve customer retention.
-
-### 5. Product Strategy
-
-Focus marketing and inventory planning on high-performing product categories while monitoring underperforming categories.
-
-### 6. Personalized Recommendations
-
-Use customer purchase history and preferences to provide relevant product recommendations.
-
-### 7. Customer Experience
-
-Monitor customer ratings and purchasing preferences to identify opportunities for improving customer satisfaction.
 
 ---
 
@@ -421,8 +367,6 @@ The project can be further enhanced by:
 # 👩‍💻 Author
 
 ## Greeshma R Krishnan
-
-**Data Analyst**
 
 Python • SQL • Power BI • Excel • Data Visualization
 
