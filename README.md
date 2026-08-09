@@ -8,9 +8,7 @@
   <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/SQL-Data%20Analysis-orange?logo=mysql" alt="SQL">
   <img src="https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-yellow?logo=powerbi" alt="Power BI">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas" alt="Pandas">
-  <img src="https://img.shields.io/badge/Matplotlib-Visualization-blue?logo=python" alt="Matplotlib">
-  <img src="https://img.shields.io/badge/Project-Completed-success" alt="Project Status">
+  
 </p>
 
 ---
